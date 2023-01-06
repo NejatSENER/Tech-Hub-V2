@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Tech Hub - Galeri</title>
+    <script
+      src="https://kit.fontawesome.com/cd18526237.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/deneme.css" />
+  </head>
+
+  <body>
+    <div id="progress">
+      <button id="progress-value">&#x1F815;</button>
+    </div>
+
+    <header>
+      <div id="header" class="container">
+        <div class="logo">
+          <a href="index.html"><img src="images/logo.png" /></a>
+        </div>
+        <div class="menu">
+          <!--   İlerde başka kısımlar da eklenir   -->
+          <ul>
+            <li><a href="index.html">ANA SAYFA</a></li>
+            <li><a href="gallery.html">GALERİ</a></li>
+            <li><a href="about.html">HAKKIMIZDA</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- Locomotive scroll yapılacak bu sayfada -->
+
+    <!--                 Main Section                        -->
+
+    <section id="gallerySlider" class="slider">
+      <div id="galleryCaption" class="caption">
+        <h1>FOTOĞRAFLAR</h1>
+        <p>Tech Hub'da hayatın küçük bir bölümünü sizler için derliyoruz</p>
+      </div>
+    </section>
+
+    <!--               Photos Section                    -->
+
+    <section id="photos" class="sectionArea">
+      <!--İstenirse buraya "photosTop" bölümü yapılabilir.-->>
+      <div class="photosBody">
+        <div id="fullImgBox" class="fullImg">
+          <img src="images/galleryIMG/img1.JPG" id="fullImg" />
+          <span onclick="CloseFullImg()">X</span>
+        </div>
+        <div class="imgGallery">
+          <img
+            src="images/galleryIMG/img1.jpg"
+            onclick="OpenFullImg(this.src)"
+          />
+          <img
+            src="images/galleryIMG/img2.jpg"
+            onclick="OpenFullImg(this.src)"
+          />
+          <img
+            src="images/galleryIMG/img3.jpg"
+            onclick="OpenFullImg(this.src)"
+          />
+          <img
+            src="images/galleryIMG/img14.jpg"
+            onclick="OpenFullImg(this.src)"
+          />
+          <img
+            src="images/galleryIMG/img15.jpg"
+            onclick="OpenFullImg(this.src)"
+          />
+          <img
+            src="images/galleryIMG/img6.jpg"
+            onclick="OpenFullImg(this.src)"
+          />
+          <img
+            src="images/galleryIMG/img7.jpg"
+            onclick="OpenFullImg(this.src)"
+          />
+          <img
+            src="images/galleryIMG/img8.jpg"
+            onclick="OpenFullImg(this.src)"
+          />
+          <img
+            src="images/galleryIMG/img11.jpg"
+            onclick="OpenFullImg(this.src)"
+          />
+          <img
+            src="images/galleryIMG/img12.jpg"
+            onclick="OpenFullImg(this.src)"
+          />
+          <img
+            src="images/galleryIMG/img16.jpg"
+            onclick="OpenFullImg(this.src)"
+          />
+          <img
+            src="images/galleryIMG/img17.jpg"
+            onclick="OpenFullImg(this.src)"
+          />
+          <img
+            src="images/galleryIMG/img18.jpg"
+            onclick="OpenFullImg(this.src)"
+          />
+          <img
+            src="images/galleryIMG/img19.jpg"
+            onclick="OpenFullImg(this.src)"
+          />
+          <img
+            src="images/galleryIMG/img20.jpg"
+            onclick="OpenFullImg(this.src)"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+
+    <footer class="sectionArea">
+      <div class="container">
+        <div class="col3">
+          <div class="footerItem">
+            <h3>SİTEMİZE HOŞGELDİNİZ</h3>
+            <a href="index.html"><img src="images/logo_beyaz.png" /></a>
+            <p></p>
+          </div>
+        </div>
+        <div class="col3">
+          <div class="footerItem">
+            <h3></h3>
+            <ul class="footerLinks">
+              <li><a href="index.html">ANA SAYFA</a></li>
+              <li><a href="gallery.html">GALERİ</a></li>
+              <li><a href="about.html">HAKKIMIZDA</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col3">
+          <div class="footerItem">
+            <h3>SOSYAL MEDYA</h3>
+            <ul class="socialLinks">
+              <li>
+                <a href="https://www.instagram.com/ttechhub1/" target="_blank">
+                  <i class="bi bi-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/tech-hub-38007325a/"
+                  target="_blank"
+                >
+                  <i class="bi bi-linkedin"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://discord.gg/h7heh7HY">
+                  <i class="bi bi-discord"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/index.js"></script>
+</html>

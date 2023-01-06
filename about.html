@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Tech Hub - Hakkımızda</title>
+    <script
+      src="https://kit.fontawesome.com/cd18526237.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/deneme.css" />
+  </head>
+
+  <body>
+    <div id="progress">
+      <button id="progress-value">&#x1F815;</button>
+    </div>
+
+    <header>
+      <div id="header" class="container">
+        <div class="logo">
+          <a href="index.html"><img src="images/logo.png" /></a>
+        </div>
+        <div class="menu">
+          <!--   İlerde başka kısımlar da eklenir   -->
+          <ul>
+            <li><a href="index.html">ANA SAYFA</a></li>
+            <li><a href="gallery.html">GALERİ</a></li>
+            <li><a href="about.html">HAKKIMIZDA</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!--                 Main Section                        -->
+
+    <section id="aboutSlider" class="slider">
+      <div id="aboutCaption" class="caption">
+        <h1>HAKKIMIZDA</h1>
+      </div>
+    </section>
+
+    <!--               About Section                    -->
+
+    <section id="about" class="sectionArea">
+      <div class="aboutTop">
+        <h2 class="sectionHeader">Merhaba</h2>
+      </div>
+      <div class="aboutBody">
+        <p>
+          Biz, Tech Hub olarak Nişantaşı Üniversitesi bünyesinde kurulmuş bir
+          öğrenci kulübüyüz. Bu kulübün amacı, grupça projeler geliştirmek,
+          Türkiye çapında ve uluslararası yarışmalarda kendimizi ve okulumuzu
+          temsil etmek, birçok değerli insanlar tanışarak sosyalleşmek ve tüm
+          bunlar sayesinde kendimizi geliştirmektir. Enerjisi, heyecanı ve daha
+          da önemlisi öğrenme isteği yüksek arkadaşları aramızda görmekten
+          mutluluk duyarız.
+        </p>
+        <br />
+        <p>Hayalinizle gelin birlikte gerçekleştirelim ...</p>
+      </div>
+    </section>
+
+    <!--                 Contact Section               -->
+
+    <section id="contact" class="sectionArea">
+      <div class="contactTop">
+        <h2 class="sectionHeader">İLETİŞİM</h2>
+        <p>
+          Lütfen düşüncelerinizi bizimle paylaşmaktan çekinmeyin, her türlü
+          eleştiri ve tavsiyeye açığız.
+        </p>
+      </div>
+      <div class="contactBody">
+        <div class="containerFluid">
+          <div class="contactCaption">
+            <div class="col2">
+              <div class="contactInfo">
+                <div class="locationInfo">
+                  <i class="fa fa-map-location-dot"></i>
+                  <p>Nişantaşı Üniversitesi NeoTech Kampüs,</p>
+                  <p>Maslak/İstanbul</p>
+                </div>
+                <div class="emailInfo">
+                  <i class="fa fa-envelope"></i>
+                  <p>techhubsoftware1@gmail.com</p>
+                </div>
+              </div>
+            </div>
+            <div class="col2">
+              <div class="contactForm">
+                <form>
+                  <input type="text" id="name" placeholder="İsminiz" required />
+                  <input
+                    type="email"
+                    id="email_id"
+                    placeholder="E-mail"
+                    required
+                  />
+                  <input
+                    type="text"
+                    id="number"
+                    placeholder="Telefon Numaranız"
+                    required
+                  />
+                  <textarea
+                    id="message"
+                    rows="4"
+                    placeholder="Mesajınız"
+                  ></textarea>
+                  <button
+                    type="submit"
+                    id="submit"
+                    onclick="SendMail(), ClearAreas()"
+                  >
+                    Gönder
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+
+    <footer class="sectionArea">
+      <div class="container">
+        <div class="col3">
+          <div class="footerItem">
+            <h3>SİTEMİZE HOŞGELDİNİZ</h3>
+            <a href="index.html"><img src="images/logo_beyaz.png" /></a>
+            <p></p>
+          </div>
+        </div>
+        <div class="col3">
+          <div class="footerItem">
+            <h3></h3>
+            <ul class="footerLinks">
+              <li><a href="index.html">ANA SAYFA</a></li>
+              <li><a href="gallery.html">GALERİ</a></li>
+              <li><a href="about.html">HAKKIMIZDA</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col3">
+          <div class="footerItem">
+            <h3>SOSYAL MEDYA</h3>
+            <ul class="socialLinks">
+              <li>
+                <a href="https://www.instagram.com/ttechhub1/" target="_blank">
+                  <i class="bi bi-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/tech-hub-38007325a/"
+                  target="_blank"
+                >
+                  <i class="bi bi-linkedin"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://discord.gg/h7heh7HY">
+                  <i class="bi bi-discord"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/index.js"></script>
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+  ></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("9KqwrG0Jeu9Q8fg9O");
+    })();
+  </script>
+</html>
